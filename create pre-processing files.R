@@ -11,7 +11,7 @@ datDecoord = list()
 for(i in 1:32368){
   datDecoord[[i]] = cbind(round(datDe[i,]@polygons[[1]]@Polygons[[1]]@coords[,1],3), 
                           round(datDe[i,]@polygons[[1]]@Polygons[[1]]@coords[,2],3))
-  print(round(i/32368,3))
+  print(round(i/32368,3)) 
 }
 #　write out file
 library(erer)
